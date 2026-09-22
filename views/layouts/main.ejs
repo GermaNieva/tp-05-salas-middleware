@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= titulo %> | Salas de estudio</title>
+    <link rel="stylesheet" href="/css/estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenedor encabezado__interior">
+        <p class="encabezado__marca">Salas de estudio</p>
+
+        <nav aria-label="Navegación principal">
+          <ul class="menu">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/reservas">Reservas</a></li>
+            <li><a href="/reservas/nueva">Reservar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contenedor">
+      <%- body %>
+    </main>
+
+    <footer class="pie">
+      <div class="contenedor">
+        <p>Trabajo práctico 05 — Curso de Desarrollo back-end con Node.js</p>
+        <p class="pie__solicitud">Solicitud <%= solicitudId %></p>
+      </div>
+    </footer>
+  </body>
+</html>

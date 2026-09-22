@@ -1,0 +1,192 @@
+/* Hoja de estilos del TP 05. Simple, sin frameworks. */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #22272e;
+  background-color: #f2f5f9;
+}
+
+h1 {
+  color: #14406b;
+}
+
+a {
+  color: #14406b;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+/* Encabezado y navegacion */
+.encabezado {
+  background-color: #14406b;
+  color: #ffffff;
+}
+
+.encabezado__interior {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.encabezado__marca {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Nombre de la seccion que deja el middleware del router */
+.seccion {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #4a6a8a;
+}
+
+/* Grilla adaptable del listado */
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border: 1px solid #cdd8e3;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.tarjeta__titulo {
+  margin-top: 0;
+  color: #14406b;
+}
+
+.tarjeta__datos {
+  margin: 0 0 12px 0;
+}
+
+.tarjeta__datos dt,
+.detalle__datos dt {
+  font-weight: bold;
+}
+
+.tarjeta__datos dd,
+.detalle__datos dd {
+  margin: 0 0 8px 0;
+}
+
+.detalle {
+  background-color: #ffffff;
+  border: 1px solid #cdd8e3;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* Formulario */
+.formulario {
+  background-color: #ffffff;
+  border: 1px solid #cdd8e3;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 480px;
+}
+
+.formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.formulario input,
+.formulario select {
+  width: 100%;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 1px solid #9fb0c2;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Boton o enlace principal */
+.boton {
+  display: inline-block;
+  background-color: #1b5e9c;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #14406b;
+}
+
+/* Mensaje de error */
+.error {
+  background-color: #fde8e8;
+  border: 1px solid #c0392b;
+  color: #8b1f14;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.texto-guia {
+  max-width: 60ch;
+}
+
+/* Foco visible, para poder navegar con el teclado */
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+  outline: 3px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* Pie */
+.pie {
+  background-color: #e3e9f0;
+  margin-top: 32px;
+  font-size: 14px;
+}
+
+.pie__solicitud {
+  color: #5a6b7c;
+  font-size: 12px;
+}

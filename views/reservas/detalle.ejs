@@ -1,0 +1,27 @@
+<h1>Reserva número <%= reserva.id %></h1>
+
+<div class="detalle">
+  <dl class="detalle__datos">
+    <dt>Estudiante</dt>
+    <dd><%= reserva.estudiante %></dd>
+
+    <dt>Email</dt>
+    <dd><%= reserva.email %></dd>
+
+    <dt>Sala</dt>
+    <dd><%= reserva.sala %></dd>
+
+    <dt>Fecha</dt>
+    <dd><%= reserva.fecha %></dd>
+
+    <dt>Turno</dt>
+    <dd><%= reserva.turno %></dd>
+
+    <dt>Cantidad de personas</dt>
+    <dd><%= reserva.personas %></dd>
+  </dl>
+</div>
+
+<p>
+  <a class="boton" href="/reservas">Volver al listado</a>
+</p>

@@ -1,0 +1,26 @@
+{
+  "name": "tp-05-salas-middleware",
+  "version": "1.0.0",
+  "description": "Aplicacion web de reservas de salas de estudio armada alrededor de un pipeline de middleware de Express.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "middleware",
+    "morgan",
+    "ejs"
+  ],
+  "author": "German Nieva",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "morgan": "^1.12.1"
+  }
+}
